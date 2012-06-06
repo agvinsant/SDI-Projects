@@ -29,12 +29,12 @@ if (ready === true) {
 
 // Do I go back to sleep or do I stay up and get the day going? (boolean function)
 // t = tired, and a = awake
-var t = false,
-    a = true;
 
 var whatToDo = function () {
     var stayAwake = "I stay up and get my day started!",
-        backToBed = "I am tired and will go back to sleep with " + family[1] + "!";   
+        backToBed = "I am tired and will go back to sleep with " + family[1] + "!",  
+        t = false,
+        a = true;
       if ((t || a) && !(t && a)) {
         console.log(stayAwake)
       } else { console.log(backToBed)
@@ -48,5 +48,16 @@ whatToDo();
  Time to make breakfast, but what to have? 
  I want cereal, fruit, and a beverage. How many options do I have? (number function) 
 */
+var cerealTypes = 3
+
+console.log("What kind of cereal do I want, I have " + cerealTypes + " to choose from...")
+
+while (cerealTypes > 1 ) {
+        console.log(cerealTypes + " kinds of cereal to choose from...Na, next...");
+        cerealTypes--;   
+};
+console.log("That's the cereal I want!!!")
+
+
     
     
