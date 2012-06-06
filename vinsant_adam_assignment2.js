@@ -48,15 +48,23 @@ whatToDo();
  Time to make breakfast, but what to have? 
  I want cereal, fruit, and a beverage. How many options do I have? (number function) 
 */
-var cerealTypes = 3
+var cerealChoice = function () {
+    var cerealTypes = 3;
+    console.log("What kind of cereal do I want, I have " + cerealTypes + " to choose from...");
 
-console.log("What kind of cereal do I want, I have " + cerealTypes + " to choose from...")
-
-while (cerealTypes > 1 ) {
+    while (cerealTypes > 1 ) {
         console.log(cerealTypes + " kinds of cereal to choose from...Na, next...");
         cerealTypes--;   
+    };
+    return(console.log("That's the cereal I want!!!"))
 };
-console.log("That's the cereal I want!!!")
+
+cerealChoice();
+
+
+
+
+
 
 
     
