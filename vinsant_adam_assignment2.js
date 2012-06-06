@@ -23,6 +23,20 @@ if (ready === true) {
 	console.log("Hurry up kids and let's go!")
 };
 
-// Kids are off to school and now I am back home. 
+// Kids are off to school and now I am back home.
+
+// Do I go back to sleep or do I stay up and get the day going? (boolean function)
+var tired = false
+var awake = true 
+if ((tired || awake) && !(tired && awake)) {
+    console.log("I stay up and get my day started if I feel awake!")
+} else {
+    console.log("I am tired and will go back to sleep with " + family[1] + "!")
+};
+
+// So I decide to stay up and get the day going
+// Time to make breakfast, but what to have? 
 
 
+    
+    
