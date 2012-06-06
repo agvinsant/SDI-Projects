@@ -57,14 +57,15 @@ var cerealChoice = function () {
         console.log(cerealTypes + " kinds of cereal to choose from...Na, next...");
         cerealTypes--;   
     };
-    return(console.log("That's the cereal I want!!!"))
+    return console.log("That's the cereal I want!!!");
 };
 
 cerealChoice();
 // This function shows that I have been through the choices one by one and found the one I wanted!
 
 var fruitChoice = function () {
-    var fruitTypes = 4
+    var fruitTypes = 4;
+        
     console.log("What kind of fruit do I want with my cereal? I have "
                 + fruitTypes + " to choose from." );
         
@@ -72,7 +73,7 @@ var fruitChoice = function () {
             console.log(fruitTypes + " kinds of fruit, which will go best with my cereal?...Na, next...");
             fruitTypes--;
         };
-        return(console.log("That will be good in my cereal!"));
+        return console.log("That will be good in my cereal!");
 };
 
 fruitChoice(); // calls my fruitChoice function
@@ -88,6 +89,24 @@ var bevChoice = function() {
     return(console.log("I want to drink this with my breakfast!"))    
 };
 bevChoice(); // calls my bevChoice function
+
+// string function...
+console.log("Is my breakfast healthy or not healthy?");
+
+var healthyOrNotHealthy = function () {
+    var healthy = "This will be good for me.",
+    notHealthy = "not so good for me, but oh so yummy!";
+    if (cerealChoice + fruitChoice + bevChoice === true) {
+    console.log(healthy)  
+    } else if (cerealChoice + fruitChoice + bevChoice === false) {
+    console.log(notHealthy)};    
+    console.log(healthy + " Or, this is " + notHealthy);
+    return (console.log("Which do I choose?"));
+};
+
+healthyOrNotHealthy();
+
+    
 
 
 
