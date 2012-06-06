@@ -46,7 +46,7 @@ whatToDo();
 
 /* So I decide to stay up and get the day going
  Time to make breakfast, but what to have? 
- I want cereal, fruit, and a beverage. How many options do I have? (number function) 
+ I want cereal, I have 3 options, which to choose...(number function) 
 */
 var cerealChoice = function () {
     var cerealTypes = 3;
