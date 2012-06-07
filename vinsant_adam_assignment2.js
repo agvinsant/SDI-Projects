@@ -96,9 +96,9 @@ bevChoice(); // calls my bevChoice function
 // string function...I guess...
 // console.log("Is my breakfast healthy or not healthy?");
 
-var healthyOrNotHealthy = function () {
-    var healthy = "This will be good for me.",
-    notHealthy = "not so good for me, but oh so yummy!";
+var healthyOrNotHealthy = function (name) {
+    var healthy = "This will be good for " + name + ".",
+    notHealthy = "not so good for " + name + ", but oh so yummy!";
     if (cerealChoice + fruitChoice + bevChoice === true) {
     console.log(healthy)  
     } else if (cerealChoice + fruitChoice + bevChoice === false) {
@@ -107,13 +107,17 @@ var healthyOrNotHealthy = function () {
     return console.log(healthy); 
 };
 
-healthyOrNotHealthy();
+healthyOrNotHealthy("Adam");
 
+var healthy = "This will be good for me.",
+    notHealthy = "not so good for me, but oh so yummy!";
 // Now I show the pair up... array function...
 
+var myBreakfast = function (name) {
+    
 var cereals = ["Reese's Crunch", "Cheerios", "Crispix"],
     fruits = ["banana", "strawberries", "blueberries", "apple"],
-    beverages = ["juice", "coffee", "soda"];
+    beverages = ["chocolate milk", "coffee", "soda"];
       
       // This stuff is just part of the story for explanation purposes  
     console.log( "These are the cereals I have to choose from:" );
@@ -127,11 +131,40 @@ var cereals = ["Reese's Crunch", "Cheerios", "Crispix"],
     console.log( fruits.pop() );
     
     console.log("So now I am left with " + fruits + ".") ;
+    
+   console.log("So what are my best combinations?");
+   for (var i=0, j=cereals.length; i < j; i++) {
+        console.log(cereals[i] + " goes best with " + fruits[i] + " and I think I'll drink " + beverages[i]);
+   };
+   console.log("Well " + cereals[0] + " , " + fruits[0] + ", and " + beverages[0]
+               + " are " + notHealthy)
+    myChoicePhrase = console.log("I, " + name + ", think I will have " + cereals[1] + ", " + fruits[1] + ", and drink " + beverages[1] + ".");
+
+    return myChoicePhrase;
+    
+};       
+
+myBreakfast("Adam");      
+
+var cereals = ["Reese's Crunch", "Cheerios", "Crispix"],
+    fruits = ["banana", "strawberries", "blueberries", "apple"],
+    beverages = ["chocolate milk", "coffee", "soda"];
+    myChoice = cereals[1] + ', ' + fruits[1] + ', ' + ' and ' + beverages[1] + '.';
+    
+console.log("Now that I have eaten my " + myChoice + ", I can start on my school work for the morning!");
+console.log("Now my school work is done and it's time for me to get ready for work...");
+
+var readyForWork = true;
+if (readyForWork === true) {
+	console.log("I am all ready for work, time for another day at CPK!!!")
+} else {
+	console.log("Oh shoot, I forgot my uniform shirt!!! I am going to be late!!!")
+};
+
+// The End!!! 
+
+
         
-        
-        
-        
-        // all that is left in the array funtion is to figure out my For loop, my equation, and the output
 
 
 
