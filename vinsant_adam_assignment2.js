@@ -2,6 +2,9 @@
 // Author: Adam Vinsant
 // SDI: 1206
 
+
+alert("Hey YOU! Yeah YOU, it's my turn to tell a story!!! Are you listening?");
+
 // Global Variables
 var family = ["Daddy", "Momma", "Gavin", "GeAnna"];
 var kidOneReady = 1;
@@ -90,8 +93,8 @@ var bevChoice = function() {
 };
 bevChoice(); // calls my bevChoice function
 
-// string function...
-console.log("Is my breakfast healthy or not healthy?");
+// string function...I guess...
+// console.log("Is my breakfast healthy or not healthy?");
 
 var healthyOrNotHealthy = function () {
     var healthy = "This will be good for me.",
@@ -101,12 +104,35 @@ var healthyOrNotHealthy = function () {
     } else if (cerealChoice + fruitChoice + bevChoice === false) {
     console.log(notHealthy)};    
     console.log(healthy + " Or, this is " + notHealthy);
-    return (console.log("Which do I choose?"));
+    return console.log(healthy); 
 };
 
 healthyOrNotHealthy();
 
+// Now I show the pair up... array function...
+
+var cereals = ["Reese's Crunch", "Cheerios", "Crispix"],
+    fruits = ["banana", "strawberries", "blueberries", "apple"],
+    beverages = ["juice", "coffee", "soda"];
+      
+      // This stuff is just part of the story for explanation purposes  
+    console.log( "These are the cereals I have to choose from:" );
+    console.log( cereals );
+    console.log( "These are the fruits I have to choose from:");
+    console.log( fruits );
+    console.log( "These are the beverages I have to choose from:");
+    console.log( beverages );
+    console.log( "I ask myself, 'Self, what fruit is on my list that will not go well with cereal?'");
     
+    console.log( fruits.pop() );
+    
+    console.log("So now I am left with " + fruits + ".") ;
+        
+        
+        
+        
+        // all that is left in the array funtion is to figure out my For loop, my equation, and the output
+
 
 
 
