@@ -4,13 +4,25 @@
 
 // Start
 
+// Global Variables
+var busser = "Carlos",
+    host = "Amy",
+    managerFOH = "Doug",
+    managerBOH = "Steve",
+    soldDessert = true,
+    desserts = [ "Butter Cake with ice cream", "Strawberry Shortcake with ice cream", "Key Lime Pie"
+    ];
+    
+    
+
 console.log("Hello All, our servers for the day are: ");
 
 // For Loop with Argument: Object from JSON Data
 var serverOnDuty = function (frontOfHouse) {
     for (var i = 0; i < frontOfHouse.servers.length; i++) {
         var server = frontOfHouse.servers[i];
-        console.log("Name: " + server.name + ", Title: " + server.title);
+        var serverList = "Name: " + server.name + ", Title: " + server.title;
+         console.log(serverList);
     };
     
 };
@@ -25,16 +37,9 @@ var totalStaffOnDuty = function (numberStaff) {
         
      return totalStaff;
 };
-var todayStaff = totalStaffOnDuty(11);
-console.log("We have a total of " + todayStaff + " staff members on the floor today.")
 
-// Global Variables
-var busser = "Carlos",
-    host = "Amy",
-    managerFOH = "Doug",
-    managerBOH = "Steve",
-    soldDessert = true;
-    
+var todayStaff = totalStaffOnDuty(11);
+console.log("We have a total of " + todayStaff + " staff members on the floor today.")    
 console.log("Our busser is " + busser + ", and our host is " + host + ".");
 console.log("Your front of house manager is " + managerFOH + ", and the kitchen manager for the day is " + managerBOH + ".");
 console.log("This week's contest is selling desserts. You will get 1 point per dessert sold. Most points at the end of the week wins.")
@@ -61,8 +66,19 @@ var tableGreeting = function (alcoholBeverage) {
     };
     return alcoholOptions;
 };
-beverageOrder = tableGreeting(alcoholBeverage);
-console.log(beverageOrder);
+tableGreeting(alcoholBeverage);
+
+// sales efforts continue, customer makes their order and is eating.
+
+var dessertChoice = function () {
+    
+    
+    for (var key = 0; key < desserts.length; key++) {
+        console.log("Hope your enjoying everything, be sure to save room for some amazing " + desserts[key] + ".")
+    }
+};
+dessertChoice();
+
 
 // So shift is over and the dessert sales are being tallied. 
 // I want to add these sales to an object, something that can track dessert sales per server throughout the week. 
@@ -157,6 +173,38 @@ dessertsSold("Jeanine", true, 1);
 dessertsSold("Shelby", true, 2);
 dessertsSold("Mike", false, 0);
 dessertsSold("John", true, 1);
+
+// Tuesday comes...
+// Tuesday goes...
+
+console.log("Here is the list for Tuesday's Dessert sales.");
+console.log("The first number is Monday's sales and second number is Tuesday's.")
+
+// Mutator 
+adam.dailySales.push(4);
+eric.dailySales.push(3);
+stephanie.dailySales.push(1);
+alex.dailySales.push(2);
+zak.dailySales.push(1);
+jeanine.dailySales.push(3);
+shelby.dailySales.push(0);
+mike.dailySales.push(2);
+john.dailySales.push(3);
+
+
+console.log(adam.name());
+console.log(eric.name());
+console.log(stephanie.name());
+console.log(alex.name());
+console.log(zak.name());
+console.log(jeanine.name());
+console.log(shelby.name());
+console.log(mike.name());
+console.log(john.name());
+
+// The End...
+
+
 
 
 
