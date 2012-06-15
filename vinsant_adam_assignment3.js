@@ -17,7 +17,7 @@ var busser = "Carlos",
 
 console.log("Hello All, our servers for the day are: ");
 
-// For Loop with Argument: Object from JSON Data
+// For Loop with info from JSON Data
 var serverOnDuty = function (frontOfHouse) {
     for (var i = 0; i < frontOfHouse.servers.length; i++) {
         var server = frontOfHouse.servers[i];
@@ -70,9 +70,7 @@ tableGreeting(alcoholBeverage);
 
 // sales efforts continue, customer makes their order and is eating.
 
-var dessertChoice = function () {
-    
-    
+var dessertChoice = function () {  
     for (var key = 0; key < desserts.length; key++) {
         console.log("Hope your enjoying everything, be sure to save room for some amazing " + desserts[key] + ".")
     }
@@ -151,7 +149,7 @@ console.log(mike.name());
 console.log(john.name());
 
 // Time for end of the shift comments from manager Doug.
-// Conditional with string return, string argument, number argument, boolean argument, 
+ 
 
 console.log( managerFOH + " says, 'Good shift guys and gals! I will now talk to you individually about your sales for the day.'")
 

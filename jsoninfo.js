@@ -56,4 +56,3 @@ var frontOfHouse = {
         
         
         
-        
