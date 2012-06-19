@@ -4,5 +4,6 @@
 
 // Calling elapsed time function
 var lib = new adamLib();
-console.log(lib.timeTillDue);
 
+
+console.log(lib.stringToNum("42"));

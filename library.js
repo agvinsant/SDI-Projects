@@ -3,17 +3,16 @@
 // Project 4
 // Library
 
-var adamLib = function () {
+var adamLib = function() {
+  
+  // string to number function
+  var stringToNum = function(val) {
+      var string = (val),
+          number = string * 1;
+      return {
+         "number": number
+      } 
+  };
    
-   // elapsed time function
-   var timeTillDue = function() {
-        var startDate = Date.now();
-        daysTillDue();
-        var dueDate = Date.now();
-        var timeTillDueDate = dueDate - startDate;
-        return timeTillDueDate;
-   };    
-            
-    
+   
 };
-
