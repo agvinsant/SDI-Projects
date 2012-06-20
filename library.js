@@ -14,7 +14,7 @@ var adamLib = function() {
    
    // Time To Go function
    // Created function to show both hours and days left. 
-   var timeToGo = function(dateA, dateB) {
+   var timeToGo = function(dateA, dateB) {  // This is also to show I learned how to work with arguments from Project 2.
      var start    = new Date(dateA),
          end      = new Date(dateB),
          millisecondsPerHour = 3600000,
@@ -25,11 +25,25 @@ var adamLib = function() {
       return timeLeft;
    };
    
-   // 
+   // smallest number in an array that is greater than a given number
+   var findTheValue = function () {
+        Array.prototype.minGreaterThan = function(a) {
+         var t = this,
+             r = Number.POSITIVE_INFINITY, i;
+         for (i = 0; i < t.length; i++)
+         if (a < t[i] && t[i] < r) r = t[i];
+      return r;
+}
+
+         var arr=[1,6,12,14],n=5;
+         return arr.minGreaterThan(n);
+      
+   };
    
    return {
      "stringToNum": stringToNum,
-     "timeToGo": timeToGo
+     "timeToGo": timeToGo,
+     "findTheValue": findTheValue
       
    };
 };
