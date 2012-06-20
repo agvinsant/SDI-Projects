@@ -26,24 +26,40 @@ var adamLib = function() {
    };
    
    // smallest number in an array that is greater than a given number
-   var findTheValue = function () {
-        Array.prototype.minGreaterThan = function(a) {
+   var findTheValue = function (val) {
+        var arr = [1,6,12,14];
+        Array.prototype.minGreaterThan = function(val) {
          var t = this,
              r = Number.POSITIVE_INFINITY, i;
          for (i = 0; i < t.length; i++)
-         if (a < t[i] && t[i] < r) r = t[i];
+         if (val < t[i] && t[i] < r) r = t[i];
       return r;
-}
-
-         var arr=[1,6,12,14],n=5;
-         return arr.minGreaterThan(n);
+      };
+  
+         return arr.minGreaterThan(val);
       
+   };
+   
+   // Finding sum of numbers in an array funcion
+   var findTheNumbers = function () {
+      var myArray = ["a",1,"b",2,"c",3,"d",4],
+          sum = 0;
+      for (var i = 0; i < myArray.length; i++) {
+        if (!isNaN(parseInt(myArray[i]))) {
+            var totalValue = sum += myArray[i];
+        };
+      return;
+         
+   };
+     
+     //  
    };
    
    return {
      "stringToNum": stringToNum,
      "timeToGo": timeToGo,
-     "findTheValue": findTheValue
+     "findTheValue": findTheValue,
+     "findTheNumbers": findTheNumbers
       
    };
 };

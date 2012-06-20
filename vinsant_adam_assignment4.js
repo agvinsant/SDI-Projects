@@ -16,3 +16,7 @@ console.log(lib.timeToGo("June 19, 2012", "June 21, 2012"));
 // Calling the smallest number in an array that is greater than a given number function
 console.log("Calling the smallest number in an array that is greater than a given number function:");
 console.log(lib.findTheValue(5));
+
+// Finding sum of numbers in an array funcion
+console.log("Finding sum of numbers in an array funcion:");
+console.log(lib.findTheNumbers());
