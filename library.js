@@ -44,7 +44,7 @@ var adamLib = function() {
    
    // Start Problem 4
    // Validating email address function
-     // Messing around with some regExp.
+     // Messing around with some regEx.
      
    var checkValidEmail = function(emailToCheck) {
       var  emailAddress = emailToCheck,
@@ -58,7 +58,7 @@ var adamLib = function() {
    
    // Start Problem 5
    // Check URL function.
-   // Once again using regExp...
+   // Once again using regEx...
    
    var checkUrl = function(testUrl) {
       var url = testUrl,
@@ -66,21 +66,37 @@ var adamLib = function() {
           isThisUrl = regExp.test(url);
       // The following code will test the URL and return true if yes and false if no...
       console.log("This is a valid URL: " + isThisUrl);
+      // This conditional checks to see if the URL is an https: URL...
       if (url.charAt(4) == "s") {
          console.log("This is a https URL!");
       };
-      // This will tell you if it is an https: or http: URL...
+      // This will tell you if it is an http: URL...
       if (url.charAt(4) == ":") {
          console.log("This is a http URL!")
       };      
    };
    
+   // Problem 6
+   // Check Phone Number Function
+   // Again using regEx...
    
+   var checkPhoneNumber = function(testPhoneNumber) {
+      var phoneNumber = testPhoneNumber,
+          numberPattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  // regular expression test pattern
+      if (numberPattern.test(phoneNumber)) {
+         var validPhoneNumber = phoneNumber.replace(numberPattern, "($1) $2-$3");
+         console.log("This is a valid phone number!");
+      } else {
+         console.log("This is an invalid phone number!");
+      };
+   }
+
    return {
      "stringToNum": stringToNum,
      "timeToGo": timeToGo,
      "findTheValue": findTheValue,
      "checkValidEmail": checkValidEmail,
-     "checkUrl": checkUrl
+     "checkUrl": checkUrl,
+     "checkPhoneNumber": checkPhoneNumber
    };
 };

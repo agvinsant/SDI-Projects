@@ -32,3 +32,9 @@ lib.checkValidEmail("agvinsant@gmail.com");
 // Checking with my music label's website: http://www.purelogicrecordings.com
 console.log("Calling the valid URL function:");
 lib.checkUrl("http://www.purelogicrecordings.com");
+
+// Problem 6
+// Checking a valid U.S. phone number function
+// Checking the function using my personal phone number
+console.log("Calling the valid phone number function");
+lib.checkPhoneNumber("205-617-5232");
